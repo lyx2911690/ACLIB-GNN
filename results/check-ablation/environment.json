@@ -1,0 +1,11 @@
+{
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "torch": "2.12.0+cpu",
+  "torch_geometric": "2.6.1",
+  "numpy": "2.4.6",
+  "device": "cpu",
+  "cuda": null,
+  "graph_sha256": "7c06662e4a0165394e3c79fe0778d08a1054633ad51f9aa6ebeacb136843a3be",
+  "synthetic": true
+}

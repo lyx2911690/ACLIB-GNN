@@ -1,0 +1,17 @@
+{
+  "Seed": 42,
+  "Fold": 1,
+  "Best_epoch": 1,
+  "Local_Accuracy": 0.3888888888888889,
+  "Local_Precision": 0.45098039215686275,
+  "Local_Recall": 0.3888888888888889,
+  "Local_F1": 0.2691511387163561,
+  "Local_AUC": 0.4814814814814814,
+  "Local_AUPR": 0.4296632788054357,
+  "Combined_Accuracy": 0.3333333333333333,
+  "Combined_Precision": 0.1111111111111111,
+  "Combined_Recall": 0.3333333333333333,
+  "Combined_F1": 0.16666666666666666,
+  "Combined_AUC": 0.5740740740740741,
+  "Combined_AUPR": 0.4594541261207928
+}

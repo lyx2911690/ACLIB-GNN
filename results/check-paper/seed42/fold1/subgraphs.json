@@ -1,0 +1,58 @@
+[
+  {
+    "center": 0,
+    "nodes": [
+      0,
+      1,
+      89
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        89,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        89
+      ]
+    ],
+    "predicted_label": 2,
+    "selection": "center-first, then ascending node ID; candidate support, not causal ranking"
+  },
+  {
+    "center": 5,
+    "nodes": [
+      5,
+      4,
+      6
+    ],
+    "edges": [
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "predicted_label": 2,
+    "selection": "center-first, then ascending node ID; candidate support, not causal ranking"
+  }
+]
