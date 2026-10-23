@@ -8,7 +8,6 @@ The implementation includes three components:
 * **Subgraph aggregation:** pools node-centered k-hop neighborhoods.
 * **Adversarial learning:** perturbs subgraph embeddings using training labels and optimizes the node and subgraph objectives jointly.
 
-[中文说明](README.zh-CN.md)
 
 ## Installation
 
