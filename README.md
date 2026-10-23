@@ -29,7 +29,7 @@ python -m pip install torch==2.5.0 --index-url https://download.pytorch.org/whl/
 
 ## Experimental settings
 
-The default configuration uses 100 epochs, hidden dimension 64, four attention heads in the first layer, one-hop neighborhoods and at most 10 nodes per neighborhood. Dataset-specific hyperparameters are stored in [configs/datasets.json](configs/datasets.json).
+The default configuration uses 100 epochs, hidden dimension 64, four attention heads in the first layer, one-hop neighborhoods and at most 10 nodes per neighborhood. 
 
 Experiments use transductive five-fold stratified cross-validation with seed 42. Within each fold, 10% of the outer training nodes form a separate validation set for checkpoint selection. Test labels are excluded from training and perturbation generation. CPU and CUDA execution are supported.
 
@@ -99,11 +99,7 @@ The fold directory contains `subgraphs.json` with node IDs, induced edges and pr
 | `aclib/model.py` | Graph encoder, classifiers, perturbations and losses |
 | `aclib/data.py` | Dataset loading, neighborhood construction and pooling |
 | `aclib/metrics.py` | Classification metrics |
-| `configs/datasets.json` | Dataset-specific hyperparameters |
 | `scripts/` | Dataset shortcuts and source packaging |
-| `tests/` | Code correctness checks |
-| `docs/` | Implementation, validation and upload notes |
-| `legacy/` | Original scripts preserved for reference |
 | `.github/workflows/` | Automated software checks |
 
 To check the implementation without downloading datasets:
