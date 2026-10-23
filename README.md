@@ -79,7 +79,7 @@ python train.py --dataset Cora --fold 1 --export-nodes 0 10 42 --output-dir resu
 python evaluate.py --run-dir results/Cora/paper --seed 42 --fold 1
 ```
 
-`python Cora.py` (and `Citeseer.py`, `Pubmed.py`, `CS.py`) forwards to the unified runner and accepts the same arguments. `python train.py --help` lists all options. `--max-subgraph-nodes 0` retains the full k-hop support. `--deterministic` requests strict deterministic operations; unsupported GPU operations raise an error. Seeds alone do not guarantee identical results across devices or dependency versions.
+`python scripts/Cora.py` (and `scripts/Citeseer.py`, `scripts/Pubmed.py`, `scripts/CS.py`) forwards to the unified runner and accepts the same arguments. `python train.py --help` lists all options. `--max-subgraph-nodes 0` retains the full k-hop support. `--deterministic` requests strict deterministic operations; unsupported GPU operations raise an error. Seeds alone do not guarantee identical results across devices or dependency versions.
 
 Every run requires an empty output directory to prevent mixing experiments. Select a new `--output-dir` when rerunning.
 
@@ -107,9 +107,14 @@ Accuracy, precision, recall and F1 are reported as fractions; precision/recall/F
 - `aclib/`: encoder, losses, dataset loading, pooling and metrics
 - `configs/datasets.json`: dataset-specific defaults
 - `train.py` / `evaluate.py`: experiment and checkpoint evaluation entry points
+- `scripts/`: dataset shortcuts and source packaging
 - `tests/` / `.github/workflows/`: software checks
 - `legacy/`: unchanged source scripts and original README
 - `docs/REPRODUCIBILITY.md`: equation mapping, corrections and missing experiments
+
+Local datasets belong in `data/`, experiment outputs in `results/`, and source archives in `dist/`. These generated directories are excluded from Git. See [the directory guide](docs/STRUCTURE.zh-CN.md) for the full layout.
+
+Build the upload archive with `python scripts/package_source.py`; the output is `dist/ACLIB-GNN-GitHub-source.zip`.
 
 ## Citation and release information
 
