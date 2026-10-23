@@ -69,9 +69,3 @@ scripts/        Dataset shortcuts and source packaging
 train.py        Training entry point
 evaluate.py     Checkpoint evaluation entry point
 ```
-
-## Reproducibility
-
-The default `--objective paper` follows manuscript equations (3)–(8). `--objective script` uses the original scripts' loss formula with corrected training and evaluation. Paper scores have not been verified; graph classification and baseline experiments are not included.
-
-See the [implementation audit](docs/REPRODUCIBILITY.md) and [verification record](docs/VALIDATION.md) for differences and remaining gaps. The release license is pending author selection.
