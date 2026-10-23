@@ -118,7 +118,7 @@ See the [implementation audit](docs/REPRODUCIBILITY.md) and [verification record
 If you use ACLIB-GNN in your research, please cite:
 
 ```bibtex
-@software{hihyperdr2026,
+@software{aclib-gnn2026,
   title  = {ACLIB-GNN: Incorporating Adversarial Causal Learning into Information Bottlenecks for Interpretable Graph Neural Networks},
   author = {YunXia Li，Chuya Wu，Mengjie Cai，Quan Lu and Zhenyu Yue},
   year   = {2026},
