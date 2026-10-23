@@ -115,9 +115,16 @@ See the [implementation audit](docs/REPRODUCIBILITY.md) and [verification record
 
 ## Citation
 
-If you use this implementation, please cite the manuscript:
+If you use ACLIB-GNN in your research, please cite:
 
-YunXia Li, Chuya Wu, Mengjie Cai, Quan Lu and Zhenyu Yue. *ACLIB-GNN: Incorporating Adversarial Causal Learning into Information Bottlenecks for Interpretable Graph Neural Networks.*
+```bibtex
+@software{hihyperdr2026,
+  title  = {ACLIB-GNN: Incorporating Adversarial Causal Learning into Information Bottlenecks for Interpretable Graph Neural Networks},
+  author = {YunXia Li，Chuya Wu，Mengjie Cai，Quan Lu and Zhenyu Yue},
+  year   = {2026},
+  url    = {https://github.com/lyx2911690/ACLIB-GNN}
+}
+```
 
 ## Contact
 
