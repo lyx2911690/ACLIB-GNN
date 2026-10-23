@@ -29,7 +29,7 @@ python -m pip install torch==2.5.0 --index-url https://download.pytorch.org/whl/
 
 ## 实验设置
 
-默认训练 100 轮，隐藏维度为 64，第一层使用 4 个注意力头，邻域为一跳，每个邻域最多保留 10 个节点。各数据集超参数见 [configs/datasets.json](configs/datasets.json)。
+默认训练 100 轮，隐藏维度为 64，第一层使用 4 个注意力头，邻域为一跳，每个邻域最多保留 10 个节点。
 
 实验采用传导式五折分层交叉验证，默认随机种子为 42。每折从外层训练节点中划分 10% 作为独立验证集，用于选择最佳模型。测试标签不参与训练和扰动生成，支持 CPU 与 CUDA 运行。
 
@@ -99,11 +99,7 @@ python train.py --dataset Cora --fold 1 --export-nodes 0 10 42 --output-dir resu
 | `aclib/model.py` | 图编码器、分类器、扰动与损失 |
 | `aclib/data.py` | 数据读取、邻域构建与池化 |
 | `aclib/metrics.py` | 分类指标 |
-| `configs/datasets.json` | 各数据集默认超参数 |
 | `scripts/` | 数据集快捷入口与打包工具 |
-| `tests/` | 代码正确性检查 |
-| `docs/` | 实现、验证与上传说明 |
-| `legacy/` | 保留的原始脚本 |
 | `.github/workflows/` | 自动软件检查 |
 
 不下载数据集也可检查代码和训练流程：
