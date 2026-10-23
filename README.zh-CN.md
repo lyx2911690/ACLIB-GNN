@@ -69,8 +69,6 @@ python train.py --dataset Pubmed
 python train.py --dataset CS
 ```
 
-模型权重、数据划分、预测和指标保存到 `results/<dataset>/<objective>/`。每个随机种子和折次分别保存，`all_metrics.csv` 记录各折结果，`summary.json` 汇总均值和样本标准差。
-
 运行单折实验或多个随机种子：
 
 ```bash
