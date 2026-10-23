@@ -4,8 +4,6 @@ Implementation of **Incorporating Adversarial Causal Learning into Information B
 
 Supports node classification on **Cora, Citeseer, Pubmed and Coauthor CS**.
 
-[中文说明](README.zh-CN.md)
-
 ## Installation
 
 Run the following commands in a terminal, then run experiments from the repository root:
@@ -32,8 +30,7 @@ python train.py --dataset Pubmed
 python train.py --dataset CS
 ```
 
-Datasets download automatically to `data/`. Defaults are 100 epochs, five-fold stratified cross-validation and seed 42. Checkpoints are selected using a separate validation set. Dataset parameters are stored in [configs/datasets.json](configs/datasets.json).
-
+Datasets download automatically to `data/`. Defaults are 100 epochs, five-fold stratified cross-validation and seed 42. Checkpoints are selected using a separate validation set. 
 For a single fold or multiple seeds:
 
 ```bash
@@ -68,11 +65,7 @@ Tests check code logic. The smoke test uses synthetic data to verify the trainin
 
 ```text
 aclib/          Model, losses, data processing and metrics
-configs/        Dataset hyperparameters
 scripts/        Dataset shortcuts and source packaging
-tests/         Software tests
-docs/          Reproducibility and usage notes
-legacy/         Original scripts
 train.py        Training entry point
 evaluate.py     Checkpoint evaluation entry point
 ```
