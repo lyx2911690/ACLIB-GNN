@@ -58,7 +58,6 @@ python evaluate.py --run-dir results/Pubmed/paper --seed 42 --fold 1
 python evaluate.py --run-dir results/CS/paper --seed 42 --fold 1
 ```
 
-Evaluation reports Accuracy, macro Precision, Recall, F1, one-vs-rest AUC and AUPR. Training also evaluates each test fold automatically and saves the results.
 
 ## Model training
 
